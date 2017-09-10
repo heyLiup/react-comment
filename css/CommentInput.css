@@ -1,0 +1,40 @@
+.CommentInput{
+  width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+}
+.CommentInput div{
+	text-align: center;
+	margin-top: 20px;
+}
+.CommentInput div label{
+	color: skyblue;
+	display: block;
+	padding-right:156px;
+}
+.CommentInput div input{
+	border: none;
+	box-shadow: 3px 0 3px #9f9f9f;
+	vertical-align: middle;
+	width: 211px;
+
+}
+.CommentInput div textarea{
+	resize:none;
+   	box-shadow: 3px 0 3px #9f9f9f;
+    /*border-radius: 6px;*/
+    padding: 5px;
+    font-size: 18px;
+	vertical-align: middle;
+	width: 200px;
+
+}
+.CommentInput div button{
+	float: right;
+	border: none;
+	padding: 6px 10px;
+	background-color: lightblue;
+}

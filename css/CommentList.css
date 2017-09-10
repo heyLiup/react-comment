@@ -1,0 +1,29 @@
+.comment{
+	width: 60%;
+	text-align: left;
+	background-color: #f9f9f9;
+	margin:0 auto;
+	cursor: pointer;
+	border:1px solid red;
+}
+.comment label{
+	color:#666;
+}
+.comment span{
+	color:#333;
+	padding: 0 10px;
+
+}
+.comment em{
+	font-size: 12px;
+}
+.comment a{
+	display: none;
+	float: right;
+	text-decoration: none;
+	content: #333;
+}
+.comment:hover{background-color: #f1f1f1;}
+.comment:hover>a{
+	display: inline-block;
+}
