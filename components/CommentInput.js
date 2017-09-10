@@ -59,16 +59,16 @@ class CommentInput extends React.Component{
 	render(){
 		return(
 			<div className="CommentInput">
-				<h2>我的随手记</h2>
+				<h2>[]==-[]? 谈谈你的想法</h2>
 				<div>
-					<label>主题:</label>
+					<label>用户名:</label>
 					<input type="text" 
 						onBlur={this.handleUsernameBlur.bind(this)}
 						value={this.state.username} 
 						onChange={this.setUsername}/>
 				</div>
 				<div>
-					<label>写了点什么:</label>
+					<label>评论内容:</label>
 					<textarea value={this.state.comment} 
 						onChange={this.setComment}  ref={(textarea) => this.textarea = textarea}>
 					</textarea>

@@ -1,71 +1,144 @@
 *{margin:0;padding: 0;}
 body,html{height: 100%;height:100%}
-#app{
-	box-shadow: 5px 5px 18px #333;
-	margin:0 auto;
-	width: 60%;
-	height: 90%;
-	background-color: #f9f9f9;
-	box-sizing:border:box;
-	padding: 10px;
-	text-align: center;
+@media(max-width: 1500px){
+	#app{
+		box-shadow: 5px 5px 18px #333;
+		margin:0 auto;
+		width: 60%;
+		height: 90%;
+		background-color: #f9f9f9;
+		box-sizing:border:box;
+		padding: 10px;
+		text-align: center;
 
-}
-.CommentInput{
-  width: 80%;	
-  border:1px solid #f1f1f1;
-  font-weight: normal;
-  margin: 13px auto;
-  height: 160px;
-  font-size: 14px;
-  background-color: #fff;
-  padding: 30px 20px 80px 20px;
-  /*padding-top: 30px;*/
-  text-align: center;
-  position: relative;
-  color:gray;
-}
-.CommentInput div button{
-	padding: 6px 20px;		
-	float: right;
-	margin-right: 9%;
-	border: none;
-	background-color: lightblue;
-	border-radius: 3px;
-	color: white;
+	}
+	.CommentInput{
+	  width: 80%;	
+	  border:1px solid #f1f1f1;
+	  font-weight: normal;
+	  margin: 13px auto;
+	  height: 160px;
+	  font-size: 14px;
+	  background-color: #fff;
+	  padding: 30px 20px 80px 20px;
+	  /*padding-top: 30px;*/
+	  text-align: center;
+	  position: relative;
+	  color:gray;
+	}
+	.CommentInput div button{
+		padding: 6px 20px;		
+		float: right;
+		margin-right: 9%;
+		border: none;
+		background-color: lightblue;
+		border-radius: 3px;
+		color: white;
 
-}
-.CommentInput div input{
- 	border:1px solid #a1a1a1;
-	vertical-align: middle;
-	width: 70%;
-	height: 30px;
-	text-indent: .3em;
+	}
+	.CommentInput div input{
+	 	border:1px solid #a1a1a1;
+		vertical-align: middle;
+		width: 70%;
+		height: 30px;
+		text-indent: .3em;
 
-}
-.CommentInput div textarea{
-  	border:1px solid #a1a1a1;
-	text-indent: .3em;
-	resize:none;
-    /*border-radius: 6px;*/
-    /*padding: 5px;*/
-    font-size: 18px;
-	vertical-align: middle;
-	width: 70%;
-	
+	}
+	.CommentInput div textarea{
+	  	border:1px solid #a1a1a1;
+		text-indent: .3em;
+		resize:none;
+	    /*border-radius: 6px;*/
+	    /*padding: 5px;*/
+	    font-size: 18px;
+		vertical-align: middle;
+		width: 70%;
+		
 
+	}
+	/*评论展示框*/
+	.CommentList{
+		width: 80%;
+		overflow: auto;
+		height: 240px;
+		margin:0 auto;
+		display: inline-block;
+		text-align: center;
+	  	border:1px solid #f1f1f1;
+	  	background-color: #fff;
+		padding: 20px;
+	}
 }
-/*评论展示框*/
-.CommentList{
-	width: 80%;
-	overflow: auto;
-	height: 240px;
-	margin:0 auto;
-	display: inline-block;
-	text-align: center;
-  	border:1px solid #f1f1f1;
-  	background-color: #fff;
-	padding: 20px;
+@media(max-width: 540px){
+		#app{
+			box-shadow: 5px 5px 18px #333;
+			margin:0 auto;
+			width: 100%;
+			height: 90%;
+			padding: 0px;
+			/*border:1px solid red;*/
+			background-color: #f9f9f9;
+			box-sizing:border:box;
+			/*padding: 10px;*/
+			/*text-align: center;*/
+
+		}
+		.CommentInput{
+		  width: 100%;	
+		  border:1px solid #f1f1f1;
+		  font-weight: normal;
+		  margin: 0px auto;
+		  height: 180px;
+		  font-size: 14px;
+		  background-color: #fff;
+		  padding: 30px 0px 80px 0px;
+		  /*padding-top: 30px;*/
+		  text-align: center;
+		  position: relative;
+		  color:gray;
+		}
+		.CommentInput div button{
+			padding: 6px 0px;		
+			margin-right: 0px;
+			width: 100%;
+			border: none;
+			background-color: lightblue;
+			border-radius: 3px;
+			color: white;
+
+			/*padding: 10px 50px;*/
+			/*margin-right: 70px*/
+		}
+		.CommentInput div input{
+		 	border:1px solid #a1a1a1;
+			vertical-align: middle;
+			width: 100%;
+			height: 30px;
+			text-indent: .3em;
+		}
+		.CommentInput div textarea{
+		  	border:1px solid #a1a1a1;
+			text-indent: .3em;
+			resize:none;
+		    /*border-radius: 6px;*/
+		    /*padding: 5px;*/
+		    font-size: 18px;
+			vertical-align: middle;
+			width: 100%;
+			
+
+		}
+		.CommentList{
+			width: 100%;
+			overflow: auto;
+			height: 240px;
+			margin:0 auto;
+			display: inline-block;
+			text-align: center;
+		  	border:1px solid #f1f1f1;
+		  	background-color: #fff;
+			padding: 0px;
+		}
 }
 
 /*评论输入框*/
@@ -90,9 +163,11 @@ body,html{height: 100%;height:100%}
 	/*border: 1px solid red;*/
 	vertical-align: top;
 	font-size: 14px;
-	width: 80px;
+	width: 60px;
 
 }
+
+
 .comment{
 	width: 60%;
 	text-align: left;
@@ -142,78 +217,4 @@ body,html{height: 100%;height:100%}
 	display: inline-block;
 
 	opacity: 1;
-}
-/*当适配手机时改变样式*/
-@media(max-width: 540px){
-		#app{
-			width: 100%;
-			height: 100%;
-			padding: 0px;
-			/*border:1px solid red;*/
-			background-color: #f9f9f9;
-			box-sizing:border:box;
-			/*padding: 10px;*/
-			/*text-align: center;*/
-		}
-		.CommentInput{
-		  width: 100%;	
-		  border:1px solid transparent;
-		  font-weight: normal;
-		  margin: 0px auto;
-		  height: 180px;
-		  font-size: 14px;
-		  background-color: #fff;
-		  padding: 0px 0px 80px 0px;
-		  /*padding-top: 30px;*/
-		  text-align: center;
-		  position: relative;
-		  color:gray;
-		}
-		.CommentInput h2{
-			margin-bottom: 30px;
-			padding: 10px 0;
-			color: white;
-			font-family: 微软雅黑;
-			background: linear-gradient(#122,#567);
-		}
-		.CommentInput div button{
-			padding: 6px 0px;		
-			margin-right: 0px;
-			width: 100%;
-			border: none;
-			background-color: lightblue;
-			border-radius: 3px;
-			color: white;
-
-			/*padding: 10px 50px;*/
-			/*margin-right: 70px*/
-		}
-		.CommentInput div input{
-		 	border:1px solid #a1a1a1;
-			vertical-align: middle;
-			width: 100%;
-			height: 30px;
-			text-indent: .3em;
-		}
-		.CommentInput div textarea{
-		  	border:1px solid #a1a1a1;
-			text-indent: .3em;
-			resize:none;
-		    /*border-radius: 6px;*/
-		    /*padding: 5px;*/
-		    font-size: 18px;
-			vertical-align: middle;
-			width: 100%;	
-		}
-		.CommentList{
-			width: 100%;
-			overflow: auto;
-			height: 240px;
-			margin:0 auto;
-			display: inline-block;
-			text-align: center;
-		  	border:1px solid transparent;
-		  	background-color: #fff;
-			padding: 0px;
-		}
 }
